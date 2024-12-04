@@ -1,0 +1,102 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #2b5876, #4e4376, #8e44ad);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.weather-app {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+h1 span {
+  font-size: 3rem;
+  color: #f5c518;
+}
+input {
+  width: 80%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+button {
+  padding: 15px 30px;
+  background: #ff6f61;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background: #e63e32;
+  transform: scale(1.1);
+}
+.result {
+  margin-top: 20px;
+  text-align: left;
+}
+.result h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+.result p {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+.forecast {
+  margin-top: 30px;
+}
+.forecast h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.forecast-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.forecast-card:hover {
+  transform: scale(1.05);
+}
+#map {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+.error {
+  color: #ff6961;
+  font-weight: 600;
+}
